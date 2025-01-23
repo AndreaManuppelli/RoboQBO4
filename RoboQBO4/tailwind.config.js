@@ -14,14 +14,16 @@ const palette = getPalette([
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content:  [
-    "./src/**/*.{html,ts}"],
-    theme: {
-      extend: {
-        colors: palette,
-        
-      },
-      plugins: [require("daisyui")],
+  content: [
+    "./src/**/*.{html,js,ts}"
+  ],
+  theme: {
+    extend: {
+      colors: palette,
     },
+  },
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["dark"],
+  }
 }
-
