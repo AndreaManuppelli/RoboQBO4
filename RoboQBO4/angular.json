@@ -44,9 +44,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-               "node_modules/preline/preline.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -105,9 +103,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-               "node_modules/preline/preline.js"
-            ]
+            "scripts": []
           }
         }
       }

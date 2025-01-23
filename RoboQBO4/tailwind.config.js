@@ -15,7 +15,6 @@ const palette = getPalette([
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content:  [
-    "./node_modules/preline/preline.js",
     "./src/**/*.{html,ts}"],
     theme: {
       extend: {
@@ -23,7 +22,6 @@ module.exports = {
         
       },
       plugins: [
-        require('preline/plugin'),
     ],
 }
 
