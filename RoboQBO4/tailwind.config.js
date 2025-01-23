@@ -21,8 +21,7 @@ module.exports = {
         colors: palette,
         
       },
-      plugins: [
-    ],
+      plugins: [require("daisyui")],
+    },
 }
 
-}
