@@ -4,7 +4,7 @@ import getPalette from "tailwindcss-palette-generator";
 
 const palette = getPalette([
   {
-    color: "#0d3b66",
+    color: "#20dcec",
     name: "primary",
     shades: [100, 200, 300, 400, 450, 500, 600, 700, 800, 900]
   },
@@ -27,8 +27,8 @@ module.exports = {
     themes: [{
       dark: {
         ...require("daisyui/src/theming/themes")["dark"],
-        "primary": "#0d3b66",
-        "primary-focus": "#0d3b66",
+        "primary": "#20dcec",
+        "primary-focus": "#20dcec",
       }
     }],
   }
