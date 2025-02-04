@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
+*,
+*:hover {
+    scrollbar-color: auto;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+    
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary;
+    border-radius: 0px;
+  }
