@@ -1,1 +1,28 @@
-<p>processing-table works!</p>
+<div class="overflow-x-auto">
+    <table class="table table-xs bg-base-100 rounded shadow-lg overflow-hidden">
+      <thead>
+        <tr class="uppercase text-primary">
+          <th>ID</th>
+          <th>Ricetta</th>
+          <th>Stato</th>
+          <th>Data invio</th>
+          <th>Data fine</th>
+          <th>Azione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let recipe of recipes" class="text-white">
+          <th>{{recipe.id}}</th>
+          <td>{{recipe.name}}</td>
+          <td class="uppercase" [ngClass]="{ 'text-success': recipe.status === 'Completato', 'text-warning': recipe.status === 'In attesa' }">{{recipe.status}}</td>
+          <td>{{recipe.date_send | date:'dd/MM/yyyy HH:mm:ss'}}</td>
+          <td>{{recipe.date_end | date:'dd/MM/yyyy HH:mm:ss'}}</td>
+          <td><button class="btn btn-primary btn-xs">Dettagli</button></td>
+        </tr>
+        
+      </tbody>
+      <tfoot>
+       
+      </tfoot>
+    </table>
+  </div>
