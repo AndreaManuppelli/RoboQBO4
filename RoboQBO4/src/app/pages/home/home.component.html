@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<div class="grid grid-cols-3 lg:grid-cols-12 pt-24 lg:px-4">
+<div class="grid grid-cols-3 lg:grid-cols-12 pt-24 lg:px-4 pb-4">
     <div class="col-span-3 content-center shadow-xl p-2">
         <h1 class="text-2xl text-white font-bold flex items-center justify-center gap-2 border-b border-base-200 p-4"><lucide-angular name="server"></lucide-angular> Stato macchina:</h1>
         <div class="grid grid-cols-12 gap-2 justify-center">
@@ -28,33 +28,82 @@
                 <h2 class="text-xs font-bold">Presione caldaia:</h2>
                 <p class="text-xs text-white text-center font-bold">47.56 %</p>
             </div>
+            <div class="col-span-12 lg:col-span-6 flex justify-center items-center gap-2  p-4">
+                <lucide-angular name="waves"></lucide-angular>
+                <h2 class="text-xs font-bold">Presione acqua Ingresso:</h2>
+                <p class="text-xs text-white text-center font-bold">47.56 %</p>
+            </div>
         </div>
     </div>
     <div class="col-span-3 flex flex-col content-center shadow-xl p-2">
         <h1 class="text-2xl text-white font-bold flex items-center justify-center gap-2 border-b border-base-200 p-4"><lucide-angular name="siren"></lucide-angular> Allarmi:</h1>
         <div class="grid grid-cols-12 gap-2">
-            <div class="col-span-12 lg:col-span-6 flex justify-center items-center gap-2 p-4">
-                <lucide-angular name="rotate-cw"></lucide-angular>
-                <h2 class="text-xs font-bold">RPM:</h2>
-                <p class="text-white font-bold">12345</p>
+            <div class="col-span-12 flex justify-center items-center gap-2 p-4">
+                <lucide-angular name="check"></lucide-angular>
+                <h2 class="text-xs font-bold text-success">NESSUN AVVERTIMENTO PERICOLO</h2>
             </div>
-            <div class="col-span-12 lg:col-span-6 flex justify-center items-center gap-2 p-4">
-                <lucide-angular name="thermometer-sun"></lucide-angular>
-                <h2 class="text-xs font-bold">Temperatura:</h2>
-                <p class="text-xs text-white text-center font-bold">47.56°</p>
+            <div class="col-span-12 flex justify-center items-center gap-2 p-4 border-b border-primary">
+                <lucide-angular name="siren"></lucide-angular>
+                <h2 class="text-xs font-bold">Elenco Avvertimenti:</h2>
+                <p class="text-xs text-white text-center font-bold">47, 45, 43</p>
             </div>
-            <div class="col-span-12 lg:col-span-6 flex justify-center items-center gap-2  p-4">
-                <lucide-angular name="wind"></lucide-angular>
-                <h2 class="text-xs font-bold">Pressione Aria:</h2>
-                <p class="text-xs text-white text-center font-bold">47.56 hPa</p>
+            <div class="col-span-12 flex justify-center items-center gap-2 p-4">
+                <lucide-angular name="check"></lucide-angular>
+                <h2 class="text-xs font-bold text-success">DISPOSITIVO IN SICUREZZA</h2>
             </div>
-            <div class="col-span-12 lg:col-span-6 flex justify-center items-center gap-2  p-4">
-                <lucide-angular name="vault"></lucide-angular>
-                <h2 class="text-xs font-bold">Presione vasca:</h2>
-                <p class="text-xs text-white text- font-bold">47.56 %</p>
+            <div class="col-span-12 flex justify-center items-center gap-2 p-4">
+                <lucide-angular name="siren"></lucide-angular>
+                <h2 class="text-xs font-bold">Elenco Allarmi:</h2>
+                <p class="text-xs text-white text-center font-bold">47, 45, 43</p>
             </div>
+            
         </div>
     </div>
+    <div class="col-span-3 flex flex-col content-center shadow-xl p-2">
+        <h1 class="text-2xl text-white font-bold flex items-center justify-center gap-2 border-b border-base-200 p-4"><lucide-angular class="animate-spin duration-1000" name="loader-circle"></lucide-angular>PROCESSI:</h1>
+        <div class="grid grid-cols-12 gap-2 h-full">
+            <div class="col-span-12 flex flex-col justify-evenly items-center gap-2 p-4">
+                
+                <h2 class=" font-bold">N. PROCESSO ATTIVO: <b class="text-white">10</b></h2>
+                <h2 class=" font-bold">N. FASE PROCESSO ATTIVO: <b class="text-white">10</b></h2>
+                <h2 class=" font-bold">N. FASI PROCESSO ATTIVO: <b class="text-white">10</b></h2>
+            </div>
+           
+            
+        </div>
+    </div>
+    <div class="col-span-3 content-center shadow-xl p-2">
+        <h1 class="text-2xl text-white font-bold flex items-center justify-center gap-2 border-b border-base-200 p-4"><lucide-angular name="droplet"></lucide-angular> Lavaggi:</h1>
+        <div class="grid grid-cols-12 gap-2 justify-center">
+            <div class="col-span-12 lg:col-span-6 flex justify-center items-center gap-2 p-4">
+                <lucide-angular name="snowflake"></lucide-angular>
+                <h2 class="text-xs font-bold">Lavaggio freddo:</h2>
+                <lucide-angular class="text-success" name="circle-check"></lucide-angular>
+            </div>
+            <div class="col-span-12 lg:col-span-6 flex justify-center items-center gap-2 p-4">
+                <lucide-angular name="flame"></lucide-angular>
+                <h2 class="text-xs font-bold">Lavaggio caldo:</h2>
+                <lucide-angular class="text-error" name="x"></lucide-angular>
+            </div>
+            <div class="col-span-12 lg:col-span-6 flex justify-center items-center gap-2 p-4">
+                <lucide-angular name="washing-machine"></lucide-angular>
+                <h2 class="text-xs font-bold">Lavaggio sanificazione:</h2>
+                <lucide-angular class="text-success" name="circle-check"></lucide-angular>
+            </div>
+            <div class="col-span-12 lg:col-span-6 flex justify-center items-center gap-2 p-4">
+                <lucide-angular name="cpu"></lucide-angular>
+                <h2 class="text-xs font-bold">Lavaggio chip:</h2>
+                <lucide-angular class="text-error" name="x"></lucide-angular>
+            </div>
+            <div class="col-span-12 flex justify-center items-center gap-2 p-4">
+                <h2 class="text-lg font-bold">FASE CHIP: 3</h2>
+            </div>
+            
+           
+        </div>
+    </div>
+    
+
     
    
     
