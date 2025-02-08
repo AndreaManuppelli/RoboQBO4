@@ -12,17 +12,22 @@
       </thead>
       <tbody>
         <tr *ngFor="let recipe of recipes" class="text-white">
-          <th>{{recipe.id}}</th>
+          <td>{{recipe.id}}</td>
           <td>{{recipe.name}}</td>
-          <td class="uppercase" [ngClass]="{ 'text-success': recipe.status === 'Completato', 'text-warning': recipe.status === 'In attesa' }">{{recipe.status}}</td>
+          <td class="uppercase font-bold" [ngClass]="{ 'text-success': recipe.status === 'Completato', 'text-warning': recipe.status === 'In attesa' }">{{recipe.status}}</td>
           <td>{{recipe.date_send | date:'dd/MM/yyyy HH:mm:ss'}}</td>
           <td>{{recipe.date_end | date:'dd/MM/yyyy HH:mm:ss'}}</td>
           <td><button class="btn btn-primary btn-xs">Dettagli</button></td>
         </tr>
         
       </tbody>
-      <tfoot>
-       
-      </tfoot>
     </table>
+    <div class="join w-full flex justify-center items-center mt-4">
+      <button class="join-item btn btn-xs">«</button>
+      <button class="join-item btn btn-xs">1</button>
+      <button class="join-item btn btn-xs btn-active">2</button>
+      <button class="join-item btn btn-xs">3</button>
+      <button class="join-item btn btn-xs">4</button>
+      <button class="join-item btn btn-xs">»</button>
+    </div>
   </div>
